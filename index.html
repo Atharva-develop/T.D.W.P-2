@@ -238,21 +238,22 @@ animation: thank 5s infinite ;}
         <h1 class="text" id="thank"><i>THANK YOU!</i>
         </h1>
     </div>
-    <script>  window.addEventListener('load', () => {
-    // Trigger the confetti animation
-    confetti({
-        particleCount: 100,
-        spread: 70,
-        origin: { y: 0.6 },
-        colors: ['#bb0000', '#ffffff', '#0000ff', '#ffbb00', '#00ff00'],
-        scalar: 1.2
-    });
+    <script> 
+        window.addEventListener('load', () => {
+            // Trigger the confetti animation
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 },
+                colors: ['#bb0000', '#ffffff', '#0000ff', '#ffbb00', '#00ff00'],
+                scalar: 1.2
+            });
 
-    // Automatically stop the confetti animation after 0.7 seconds
-    setTimeout(() => {
-        confetti.reset();
-    }, 200000);
-});
+            // Automatically stop the confetti animation after 0.7 seconds
+            setTimeout(() => {
+                confetti.reset();
+            }, 700); // 0.7 seconds = 700 milliseconds
+        });
 </script>
 </body>
 
